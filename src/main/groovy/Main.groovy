@@ -8,6 +8,5 @@ class Main {
             Observable.just("a") ])
         .onErrorReturn({ e -> "err" })
         .subscribe({ s -> println "emitted $s"}, { println "errored" }, { println "complete" })
-        Thread.sleep(1000);
     }
 }
