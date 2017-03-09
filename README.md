@@ -10,6 +10,7 @@ Expected:
 emitted b
 emitted b
 emitted err
+emitted err
 emitted a
 complete
 ```

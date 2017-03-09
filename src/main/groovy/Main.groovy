@@ -5,6 +5,7 @@ class Main {
             Observable.just("b"),
             Observable.just("b"),
             Observable.error(new RuntimeException()),
+            Observable.error(new RuntimeException()),
             Observable.just("a") ])
         .onErrorReturn({ e -> "err" })
         .subscribe({ s -> println "emitted $s"}, { println "errored" }, { println "complete" })
